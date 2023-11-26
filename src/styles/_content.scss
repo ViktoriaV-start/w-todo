@@ -1,0 +1,177 @@
+.content {
+  margin: 3rem auto 0;
+  padding: 0 100px 5rem 100px;
+
+  &__date {
+    color: #4a7989;
+    font-weight: 600;
+    font-size: 1rem;
+    width: 9rem;
+    padding: 0.5rem;
+    cursor: pointer;
+  }
+
+  &__header {
+    display: grid;
+    grid-template-columns: 0.6fr 1.5fr 8fr 2fr 1fr;
+    gap: 0.8rem;
+    color: #ff8787;
+    font-weight: 700;
+  }
+  
+  &__text, &__text_gr {
+    font-size: 1.2rem;
+    width:  31rem;
+    font-family: 'Roboto', sans-serif;
+    color: $text-color;
+    font-weight: 600;
+    padding: 1rem 0 1rem 1rem;
+    background-color: #ffffff;
+    outline: none;
+  }
+
+  &__checkbox {
+    // width: 3.5rem;
+    // height: 3.5rem;
+    // outline-color: rgb(218, 217, 217);
+    display: none;
+  }
+
+  
+
+  &__checkbox:checked + .fake-chb::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #ff8787;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+  label {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+
+  &__item {
+    display: grid;
+    grid-template-columns: 0.6fr 1.5fr 8fr 2fr 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  &__item:hover {
+    box-shadow: 8px 9px 9px 0px rgba(0, 0, 0, 0.16);
+  }
+
+  &__btn {
+    background-color: #fcad96;
+    border-color: #fcad96;
+    color: #ffffff;
+    width: 3.5rem;
+    height: 3.5rem;
+    font-size: 2.3rem;
+  }
+
+  &__btn:hover {
+    border-color: #fd7d58;
+    background-color: #fd7d58;
+  }
+
+  &__created,
+  &__fulfil {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+  }
+
+  &__fulfil-title {
+    width: 6rem;
+  }
+
+  &__created:hover span,
+  &__fulfil:hover span {
+    color:#8792FF;
+  }
+
+  &__created:hover .icon__sort,
+  &__fulfil:hover .icon__sort {
+    fill: #8792FF;
+  }
+
+  &__title,
+  &__fulfil {
+    justify-self: center;
+  }
+
+}
+
+.bggray {
+    //background-color: #dce9ee;
+    font-weight: 300;
+}
+
+.line {
+  text-decoration-line: line-through;
+}
+
+.colored {
+  background-color: #00ffff !important;
+}
+
+
+.icon__sort {
+  fill: #ff8787;
+}
+
+
+.fake-chb {
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid #ff8787;
+  position: relative;
+  margin: 0 5px;
+}
+
+@media all and (max-width: 1139.9px) {
+  .content {
+    padding: 0 0 3rem 0;
+  }
+
+}
+
+@media all and (max-width: 979.9px) {
+  .content {
+    &__btn {
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+    &__text {
+      width: 100%;
+      font-size: 1rem;
+    }
+
+    &__header {
+      gap: 0.5rem;
+      font-size: 0.8rem;
+    }
+  }
+
+  .fake-chb {
+    width: 2rem;
+    height: 2rem;
+  }
+
+}

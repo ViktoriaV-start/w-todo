@@ -1,0 +1,26 @@
+.control {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__btn {
+    border-color: $special-color;
+    background-color: $special-color;
+    width: 200px;
+    height: 3.1rem;
+    align-self: center;
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  
+  &__btn:hover {
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16);
+    background-color: #5eabc4;
+    border-color: #5eabc4;
+  }
+}
