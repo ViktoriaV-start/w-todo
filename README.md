@@ -1,5 +1,5 @@
 # TODO
-https://viktoriav-start.github.io/w_todo/
+https://viktoriav-start.github.io/w-todo/
 
 ## Задача - Реализовать Todo List
 
